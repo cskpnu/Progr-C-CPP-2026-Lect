@@ -1,4 +1,4 @@
-// Ex-02-05.cpp
+// Example-02-05.cpp
 #include <iostream>
 
 using namespace std;

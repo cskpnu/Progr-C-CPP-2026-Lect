@@ -1,4 +1,4 @@
-```cpp
+// Example-01-05
 #include <iostream>
 #include <windows.h> // Потрібна для зміни кодування консолі
 
@@ -11,4 +11,3 @@ int main() {
 
     return 0;
 }
-```
