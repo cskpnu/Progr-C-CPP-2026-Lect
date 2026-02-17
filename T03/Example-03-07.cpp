@@ -1,19 +1,16 @@
-#include <iostream>
+#include "iostream"
 
 using namespace std;
 
 int main() {
     const int N = 5;
-    int matrix[N][N];
+    int arr[N] = {1, 2, 3, 4, 5};
+    long long product = 1;
+    int sum = 0;
 
     for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            if (i == j) {
-                matrix[i][j] = 1;
-            } else {
-                matrix[i][j] = 0;
-            }
-        }
+        sum += arr[i];      // Додаємо поточний елемент до суми
+        product *= arr[i];  // Домножуємо на поточний елемент
     }
     return 0;
 }

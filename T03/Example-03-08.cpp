@@ -1,28 +1,25 @@
-#include <iostream>
+#include "iostream"
 
 using namespace std;
 
 int main() {
-    const int N = 3;
-    int matrix[N][N] = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-    };
-    // Транспонування квадратної матриці відносно головної діагоналі
-    for (int i = 0; i < N; i++) {
-        for (int j = i + 1; j < N; j++) { // j = i + 1 — це елементи над діагоналлю
-            // Обмін елементів (swap)
-            int temp = matrix[i][j];
-            matrix[i][j] = matrix[j][i];
-            matrix[j][i] = temp;
+    const int N = 5;
+    int arr[N] = {3, 1, 4, 1, 5};
+    int minVal = arr[0];
+    int maxVal = arr[0];
+    int minIndex = 0; // Часто потрібно знати не тільки значення, а й де воно стоїть
+
+    for (int i = 1; i < N; i++) { // Починаємо з 1-го індексу, бо 0-й вже взяли
+        if (arr[i] < minVal) {
+            minVal = arr[i];
+            minIndex = i;
+        }
+        if (arr[i] > maxVal) {
+            maxVal = arr[i];
         }
     }
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
+    cout << "Min: " << minVal << " (index: " << minIndex << ")" << endl;
+    cout << "Max: " << maxVal << endl;
+
     return 0;
 }
