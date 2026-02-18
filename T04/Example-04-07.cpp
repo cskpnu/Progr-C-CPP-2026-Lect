@@ -11,5 +11,6 @@ int main() {
     if (lastDot != string::npos) {
         cout << "Розширення: " << file.substr(lastDot); // ".gz"
     }
+
     return 0;
 }
