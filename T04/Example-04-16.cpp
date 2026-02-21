@@ -13,15 +13,5 @@ int main() {
     // ПРАВИЛЬНО: Використовуємо "місток" c_str()
     printOldStyle(message.c_str());
 
-    const char* dangerousPtr;
-
-    {
-        std::string temp = "Temporary";
-        dangerousPtr = temp.c_str();
-    }
-// Тут об'єкт temp знищується. Пам'ять звільняється.
-
-    std::cout << dangerousPtr; // КАТАСТРОФА! Ми читаєм
-
-    return 0;
+     return 0;
 }
