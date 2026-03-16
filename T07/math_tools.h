@@ -1,3 +1,4 @@
+#pragma once
 // Оголошення структури
 struct Point {
     int x;
