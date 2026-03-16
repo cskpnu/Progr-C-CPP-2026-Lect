@@ -1,4 +1,4 @@
-#include "T07/math_tools.h" // Підключаємо власний заголовок, щоб бачити структуру Point
+#include "math_tools.h" // Підключаємо власний заголовок, щоб бачити структуру Point
 #include <iostream>
 #include <cmath>
 

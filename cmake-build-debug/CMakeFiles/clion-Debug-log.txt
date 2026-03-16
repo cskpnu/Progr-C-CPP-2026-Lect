@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Ivaniuk\Projects\Edu\Progr-C-CPP-2026\Progr-C-CPP-2026-Lect Select CMakeLists.txt
