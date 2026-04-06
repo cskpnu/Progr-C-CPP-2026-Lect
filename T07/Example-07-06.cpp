@@ -12,5 +12,9 @@ int main() {
     staticCounter(); // Виведе 1
     staticCounter(); // Виведе 2
     staticCounter(); // Виведе 3
+    staticCounter();
+    staticCounter();
+    staticCounter();
+    staticCounter();
     return 0;
 }
