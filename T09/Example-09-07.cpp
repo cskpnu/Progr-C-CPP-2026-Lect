@@ -4,18 +4,19 @@
 
 int main() {
     // === ЕТАП 1: ЗАПИС У ФАЙЛ ===
+    /*
     std::ofstream outFile("point.txt");
     if (outFile.is_open()) {
-        std::string pointName = "Alpha";
-        double x = 45.5;
-        double y = -12.3;
+        std::string pointName = "Alpha+";
+        double x = 45.56;
+        double y = -125.3;
 
         // Записуємо дані, розділяючи їх пробілами
         outFile << pointName << " " << x << " " << y << "\n";
         outFile.close();
         std::cout << "Дані успішно записано у файл point.txt\n";
     }
-
+*/
     // === ЕТАП 2: ЗЧИТУВАННЯ З ФАЙЛУ ===
     std::ifstream inFile("point.txt");
     if (inFile.is_open()) {

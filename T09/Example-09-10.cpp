@@ -2,7 +2,7 @@
 #include <fstream>
 
 int main() {
-    int numbers[] = {10, 20, 30, 40, 50};
+    long long int numbers[] = {10, 20, 30, 40, 50};
     int size = sizeof(numbers); // Розмір усього масиву в байтах (5 * 4 = 20 байт)
 
     // === ЗАПИС БЛОКУ ДАНИХ ===
